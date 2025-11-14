@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-// #include <stdio.h>
+#include <stdio.h>
 
 static int	ft_countdigits(int n)
 {
@@ -48,7 +48,10 @@ static char	*ft_strinv(char *str)
 	char	tmp;
 
 	i = 0;
-	j = ft_strlen(str) - 1;
+	j = 0;
+	while (str[j] != '\0')
+		j++;
+	j--;
 	while (j > i)
 	{
 		tmp = str[i];
@@ -62,16 +65,24 @@ static char	*ft_strinv(char *str)
 
 static void	ft_conv(int n, int *i, char *num)
 {
+	int				neg;
+	unsigned int	un;
+
+	neg = 0;
 	if (n < 0)
 	{
-		n = -n;
-		num[(*i)++] = '-';
+		neg = 1;
+		un = (unsigned int)(- (long)n);
 	}
-	while (n != 0)
+	else
+		un = (unsigned int)n;
+	while (un != 0)
 	{
-		num[(*i)++] = n % 10 + '0';
-		n = n / 10;
+		num[(*i)++] = un % 10 + '0';
+		un = un / 10;
 	}
+	if (neg)
+		num[(*i)++] = '-';
 	num[*i] = '\0';
 }
 
@@ -103,10 +114,10 @@ char	*ft_itoa(int n)
 	return (ft_strinv(nb));
 }
 
-// int main(void)
-// {
-//     int numbers[] = {0, 123, -456, 2147483647, -2147483648};
-//     for (int i = 0; i < 5; i++)
-//         printf("ft_itoa(%d) = %s\n", numbers[i], ft_itoa(numbers[i]));
-//     return 0;
-// }
+int main(void)
+{
+    int numbers[] = {0, 123, -456, 2147483647, -2147483648};
+    for (int i = 0; i < 5; i++)
+        printf("ft_itoa(%d) = %s\n", numbers[i], ft_itoa(numbers[i]));
+    return 0;
+}

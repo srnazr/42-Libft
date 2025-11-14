@@ -15,11 +15,11 @@
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	t_lst	*ptr;
+	t_list	*ptr;
 
 	if (!new)
 		return ;
-	ptr = (*lst);
+	ptr = *lst;
 	if (*lst == NULL)
 	{
 		*lst = new;

@@ -42,6 +42,8 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	char	*jstr;
 	int		len;
 
+	if (!s1 || !s2)
+		return (NULL);
 	len = ft_strlength(s1) + ft_strlength(s2) + 1;
 	jstr = malloc(sizeof(char) * len);
 	if (!jstr)
