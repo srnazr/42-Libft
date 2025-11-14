@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+// #include <stdio.h>
 
 static int	ft_countdigits(int n)
 {
@@ -101,3 +102,11 @@ char	*ft_itoa(int n)
 	ft_conv(n, &i, nb);
 	return (ft_strinv(nb));
 }
+
+// int main(void)
+// {
+//     int numbers[] = {0, 123, -456, 2147483647, -2147483648};
+//     for (int i = 0; i < 5; i++)
+//         printf("ft_itoa(%d) = %s\n", numbers[i], ft_itoa(numbers[i]));
+//     return 0;
+// }

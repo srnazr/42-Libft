@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+// #include <stdio.h>
 
 static int	ft_strlength(const char *str)
 {
@@ -60,3 +61,20 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 	substr[j] = '\0';
 	return (substr);
 }
+
+// int main(void)
+// {
+//     const char *str = "Hello, World!";
+//     unsigned int start = 7;
+//     size_t len = 5;
+//     char *sub;
+//     sub = ft_substr(str, start, len);
+//     if (sub)
+//     {
+//         printf("Substring: %s\n", sub);
+//         free(sub);
+//     }
+//     else
+//         printf("Failed to allocate substring\n");
+//     return 0;
+// }

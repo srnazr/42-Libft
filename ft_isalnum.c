@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+// #include <stdio.h>
 
 int	ft_isalnum(int c)
 {
@@ -19,3 +20,13 @@ int	ft_isalnum(int c)
 		return (1);
 	return (0);
 }
+
+// int main(void)
+// {
+//     char test[] = {'A', 'z', '5', '%', ' '};
+//     for (int i = 0; i < 5; i++)
+//     {
+//         printf("ft_isalnum('%c') = %d\n", test[i], ft_isalnum(test[i]));
+//     }
+//     return 0;
+// }

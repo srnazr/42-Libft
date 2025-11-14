@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+// #include <stdio.h>
 
 static int	ft_ctwords(const char *str, char c)
 {
@@ -86,3 +87,18 @@ char	**ft_split(const char *s, char c)
 	strs[k] = NULL;
 	return (strs);
 }
+
+// int main(void)
+// {
+//     char **words;
+//     int i;
+//     words = ft_split("hello world this is test", ' ');
+//     i = 0;
+//     while (words[i])
+//     {
+//         ft_putstr_fd(words[i], 1);
+//         ft_putchar_fd('\n', 1);
+//         i++;
+//     }
+//     return 0;
+// }

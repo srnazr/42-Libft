@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+// #include <stdio.h>
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
@@ -32,3 +33,21 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	}
 	return (ptr);
 }
+
+// int main(void)
+// {
+//     int *arr;
+//     size_t n = 5;
+
+//     arr = (int *)ft_calloc(n, sizeof(int));
+//     if (!arr)
+//         return 1;
+
+//     printf("New array:\n");
+//     for (size_t i = 0; i < n; i++)
+//         printf("%d ", arr[i]);
+//     printf("\n");
+
+//     free(arr);
+//     return 0;
+// }

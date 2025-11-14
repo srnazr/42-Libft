@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+// #include <stdio.h>
 
 void	ft_bzero(void *s, size_t n)
 {
@@ -22,3 +23,22 @@ void	ft_bzero(void *s, size_t n)
 	while (i < n)
 		str[i++] = 0;
 }
+
+// int main(void)
+// {
+//     char arr[10] = {'a','b','c','d','e','f','g','h','i','j'};
+
+//     printf("Before bzero:\n");
+//     for (int i = 0; i < 10; i++)
+//         printf("%c ", arr[i]);
+//     printf("\n");
+
+//     ft_bzero(arr, 5);
+
+//     printf("After bzero:\n");
+//     for (int i = 0; i < 10; i++)
+//         printf("%d ", arr[i]);
+//     printf("\n");
+
+//     return 0;
+// }

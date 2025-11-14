@@ -24,3 +24,9 @@ void	ft_putendl_fd(char *str, int fd)
 	}
 	write(fd, "\n", 1);
 }
+
+// int main(void)
+// {
+//     ft_putendl_fd("Hello world!", 1);
+//     return 0;
+// }

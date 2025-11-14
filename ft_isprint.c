@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+// #include <stdio.h>
 
 int	ft_isprint(int c)
 {
@@ -18,3 +19,11 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
+
+// int main(void)
+// {
+//     int tests[] = {31, 32, 65, 126, 127};
+//     for (int i = 0; i < 5; i++)
+//         printf("ft_isprint(%d) = %d\n", tests[i], ft_isprint(tests[i]));
+//     return 0;
+// }

@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+// #include <stdio.h>
 
 static int	ft_find(const char *set, char c)
 {
@@ -62,3 +63,19 @@ char	*ft_strtrim(const char *s1, const char *set)
 	tmp[k] = '\0';
 	return (tmp);
 }
+
+// int main(void)
+// {
+//     const char *str = "   Hello, World!   ";
+//     const char *set = " ";
+//     char *trimmed;
+//     trimmed = ft_strtrim(str, set);
+//     if (trimmed)
+//     {
+//         printf("Trimmed string: '%s'\n", trimmed);
+//         free(trimmed);
+//     }
+//     else
+//         printf("Failed to allocate memory\n");
+//     return 0;
+// }

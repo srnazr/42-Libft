@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+// #include <stdio.h>
 
 static int	ft_strlength(const char *str)
 {
@@ -41,3 +42,17 @@ char	*ft_strdup(const char *s1)
 	tmp[i] = '\0';
 	return (tmp);
 }
+
+// int main(void)
+// {
+//     char *original = "Hello Libft!";
+//     char *copy;
+//     copy = ft_strdup(original);
+//     if (copy)
+//     {
+//         ft_putstr_fd(copy, 1);
+//         ft_putchar_fd('\n', 1);
+//         free(copy);
+//     }
+//     return 0;
+// }

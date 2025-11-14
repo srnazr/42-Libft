@@ -23,3 +23,10 @@ void	ft_putstr_fd(char *s, int fd)
 		i++;
 	}
 }
+
+// int main(void)
+// {
+//     ft_putstr_fd("Hello, Libft!\n", 1);
+//     ft_putstr_fd("This is a test.\n", 1);
+//     return 0;
+// }

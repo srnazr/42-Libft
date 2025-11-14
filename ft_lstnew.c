@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+// #include <stdio.h>
 
 t_list	*ft_lstnew(void *content)
 {
@@ -21,3 +22,17 @@ t_list	*ft_lstnew(void *content)
 	ptr->next = NULL;
 	return (ptr);
 }
+
+// int main(void)
+// {
+//     t_list *node = ft_lstnew("Hello, world!");
+//     if (!node)
+//     {
+//         printf("Memory allocation failed.\n");
+//         return 1;
+//     }
+//     printf("Node content: %s\n", (char *)node->content);
+//     printf("Node next: %p\n", (void *)node->next);
+//     free(node);
+//     return 0;
+// }

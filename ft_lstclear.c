@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+// #include <stdio.h>
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
@@ -27,3 +28,27 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	}
 	*lst = NULL;
 }
+
+// void del(void *content)
+// {
+//     free(content);
+// }
+
+// int main(void)
+// {
+//     t_list *head = NULL;
+//     t_list *node1 = ft_lstnew(strdup("first"));
+//     t_list *node2 = ft_lstnew(strdup("second"));
+//     ft_lstadd_back(&head, node1);
+//     ft_lstadd_back(&head, node2);
+//     t_list *ptr = head;
+//     while (ptr)
+//     {
+//         printf("%s\n", (char *)ptr->content);
+//         ptr = ptr->next;
+//     }
+//     ft_lstclear(&head, del);
+//     if (head == NULL)
+//         printf("Done :D\n");
+//     return 0;
+// }

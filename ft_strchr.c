@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+// #include <stdio.h>
 
 char	*ft_strchr(const char *s, int c)
 {
@@ -30,3 +31,17 @@ char	*ft_strchr(const char *s, int c)
 	else
 		return (NULL);
 }
+
+// int main(void)
+// {
+//     char *str = "hello world";
+//     char *res;
+//     res = ft_strchr(str, 'o');
+//     if (res)
+//         ft_putstr_fd(res, 1);
+//     ft_putchar_fd('\n', 1);
+//     res = ft_strchr(str, 'z');
+//     if (!res)
+//         ft_putstr_fd("Not found\n", 1);
+//     return 0;
+// }

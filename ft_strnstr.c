@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+// #include <stdio.h>
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
@@ -40,3 +41,17 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
+
+// int main(void)
+// {
+//     const char *big = "Hello World!";
+//     const char *little = "World";
+//     size_t len = 11;
+//     char *res;
+//     res = ft_strnstr(big, little, len);
+//     if (res)
+//         printf("Found: %s\n", res);
+//     else
+//         printf("Not found within length %zu\n", len);
+//     return 0;
+// }

@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+// #include <stdlib.h>
 
 static int	ft_strlength(const char *str)
 {
@@ -49,3 +50,18 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	ft_strcpy(jstr + ft_strlength(s1), s2);
 	return (jstr);
 }
+
+// int main(void)
+// {
+//     char *s1 = "Hello, ";
+//     char *s2 = "World!";
+//     char *joined;
+//     joined = ft_strjoin(s1, s2);
+//     if (joined)
+//     {
+//         ft_putstr_fd(joined, 1);
+//         ft_putchar_fd('\n', 1);
+//         free(joined);
+//     }
+//     return 0;
+// }

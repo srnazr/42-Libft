@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+// #include <stdio.h>
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
@@ -19,3 +20,17 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *))
 	del(lst->content);
 	free(lst);
 }
+
+// void del(void *content)
+// {
+//     free(content);
+// }
+
+// int main(void)
+// {
+//     t_list *node = ft_lstnew(strdup("hello"));
+//     printf("Before: %s\n", (char *)node->content);
+//     ft_lstdelone(node, del);
+//     printf("Done :D\n");
+//     return 0;
+// }

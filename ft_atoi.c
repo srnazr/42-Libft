@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+// #include <stdio.h>
 
 int	ft_atoi(const char *nptr)
 {
@@ -36,3 +37,16 @@ int	ft_atoi(const char *nptr)
 	}
 	return (nb * sym);
 }
+
+// int main(void)
+// {
+//     const char *str1 = "   -12345";
+//     const char *str2 = "42";
+//     const char *str3 = "+987";
+
+//     printf("%d\n", ft_atoi(str1));
+//     printf("%d\n", ft_atoi(str2));
+//     printf("%d\n", ft_atoi(str3));
+
+//     return 0;
+// }

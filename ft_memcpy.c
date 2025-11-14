@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+// #include <stdio.h>
 
 void	*ft_memcpy(void *dest, const void *src, size_t num)
 {
@@ -30,3 +31,13 @@ void	*ft_memcpy(void *dest, const void *src, size_t num)
 	}
 	return (dest);
 }
+
+// int main(void)
+// {
+//     char src[] = "Hello, world!";
+//     char dest[20];
+//     ft_memcpy(dest, src, 13);
+//     dest[13] = '\0'; 
+//     printf("Copied string: %s\n", dest); 
+//     return 0;
+// }

@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+// #include <stdio.h>
 
 int	ft_lstsize(t_list *lst)
 {
@@ -26,3 +27,14 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (size);
 }
+
+// int main(void)
+// {
+//     t_list *head = ft_lstnew("first");
+//     ft_lstadd_back(&head, ft_lstnew("second"));
+//     ft_lstadd_back(&head, ft_lstnew("third"));
+//     int size = ft_lstsize(head);
+//     printf("List size: %d\n", size); 
+//     ft_lstclear(&head, free);
+//     return 0;
+// }

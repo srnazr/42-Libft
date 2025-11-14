@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+// #include <stdio.h>
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
@@ -27,3 +28,20 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
+
+// int main(void)
+// {
+//     char data[] = "Hello World";
+//     char *res;
+//     res = ft_memchr(data, 'W', 11);
+//     if (res)
+//         printf("Found: %c\n", *res); 
+//     else
+//         printf("Not found\n");
+//     res = ft_memchr(data, 'z', 11);
+//     if (res)
+//         printf("Found: %c\n", *res);
+//     else
+//         printf("Not found\n");
+//     return 0;
+// }
