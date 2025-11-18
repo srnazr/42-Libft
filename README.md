@@ -93,7 +93,7 @@ valgrind --leak-check=full ./your_program
 
 Working on libft built a wide range of low-level programming skills, including:
 
-- A good understanding of pointers.
+- A good understanding of pointers
 
 - Understanding memory allocation and manual memory management
 
